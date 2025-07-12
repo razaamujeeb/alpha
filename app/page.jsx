@@ -13,7 +13,7 @@ export default function Page() {
 
   const encodedQuery = encodeURIComponent(query);
   const sites = [
-    { name: "楽天", url: `https://search.rakuten.co.jp/search/mall/${encodedQuery}/`, img: "https://upload.wikimedia.org/wikipedia/commons/8/88/Rakuten_Global_Market_logo.svg" },
+    { name: "楽天", url: `https://search.rakuten.co.jp/search/mall/${encodedQuery}/`, img: "https://upload.wikimedia.org/wikipedia/commons/4/4a/Rakuten_logo.svg" },
     { name: "ヤフオク", url: `https://auctions.yahoo.co.jp/search/search?p=${encodedQuery}`, img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Yahoo_Japan_Auctions_logo.png/320px-Yahoo_Japan_Auctions_logo.png" },
     { name: "メルカリ", url: `https://jp.mercari.com/search?keyword=${encodedQuery}`, img: "https://upload.wikimedia.org/wikipedia/commons/6/6f/Mercari_logo.png" },
     { name: "ジモティー", url: `https://jmty.jp/all/sale?keyword=${encodedQuery}`, img: "https://www.go-with-eq.com/wp-content/themes/gowitheq/assets/img/logo-jimoty.png" },
