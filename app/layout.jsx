@@ -1,7 +1,7 @@
 
 export const metadata = {
   title: "alpha",
-  description: "Auto parts multi-search",
+  description: "auto parts multi-search",
 };
 
 export default function RootLayout({ children }) {
