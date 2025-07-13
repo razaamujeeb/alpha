@@ -12,15 +12,46 @@ export default function Page() {
   };
 
   const encodedQuery = encodeURIComponent(query);
-  const sites = [
-    { name: "楽天", url: `https://search.rakuten.co.jp/search/mall/${encodedQuery}/`, img: "https://upload.wikimedia.org/wikipedia/commons/4/4a/Rakuten_logo.svg" },
-    { name: "ヤフオク", url: `https://auctions.yahoo.co.jp/search/search?p=${encodedQuery}`, img: "https://upload.wikimedia.org/wikipedia/commons/6/62/%E3%83%A4%E3%83%95%E3%82%AA%E3%82%AF%EF%BC%81.svg" },
-    { name: "メルカリ", url: `https://jp.mercari.com/search?keyword=${encodedQuery}`, img: "https://upload.wikimedia.org/wikipedia/commons/9/93/Mercari_logo.svg" },
-    { name: "ジモティー", url: `https://jmty.jp/all/sale?keyword=${encodedQuery}`, img: "https://sharing-economy.jp/ja/wp-content/uploads/2023/06/jmty_logo_A-300x82.jpg" },
-    { name: "モノタロウ", url: `https://www.monotaro.com/s/?word=${encodedQuery}`, img: "https://www.monotaro.com/favicon.ico" },
-    { name: "カーセンサー", url: `https://www.carsensor.net/parts/search.php?KW=${encodedQuery}`, img: "https://www.carsensor.net/favicon.ico" },
-    { name: "Amazon", url: `https://www.amazon.co.jp/s?k=${encodedQuery}`, img: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" },
+ const mainSites = [
+  {
+    name: "楽天",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/8/8f/Rakuten_Global_Brand_Logo.svg",
+    baseUrl: "https://search.rakuten.co.jp/search/mall/",
+  },
+  {
+    name: "ヤフオク",
+    logo: "https://auctions.yahoo.co.jp/favicon.ico",
+    baseUrl: "https://auctions.yahoo.co.jp/search/search?p=",
+  },
+  {
+    name: "メルカリ",
+    logo: "https://static.mercdn.net/images/logo/mercari_logo.png",
+    baseUrl: "https://www.mercari.com/jp/search/?keyword=",
+  },
+  {
+    name: "ジモティー",
+    logo: "https://jmty.jp/favicon.ico",
+    baseUrl: "https://jmty.jp/all/sale?keyword=",
+    }
+  {
+    name: "Amazon",
+    logo: "https://www.amazon.co.jp/favicon.ico",
+    baseUrl: "https://www.amazon.co.jp/s?k=",
+  }
   ];
+
+  const manualSites = [
+  {
+    name: "モノタロウ",
+    logo: "https://www.monotaro.com/favicon.ico",
+    baseUrl: "https://www.monotaro.com/s/?keyword=",
+  },
+  {
+    name: "カーセンサー",
+    logo: "https://www.carsensor.net/favicon.ico",
+    baseUrl: "https://www.carsensor.net/usedcar/search.php?KEYWORD=",
+  },
+];
 
   return (
     <main style={{ fontFamily: "Arial, sans-serif", textAlign: "center", paddingTop: "4rem" }}>
