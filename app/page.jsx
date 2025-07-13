@@ -13,10 +13,10 @@ export default function Page() {
 
   const encodedQuery = encodeURIComponent(query);
   const mainSites = [
-    { name: "楽天", url: `https://search.rakuten.co.jp/search/mall/${encodedQuery}/`, img: "https://upload.wikimedia.org/wikipedia/commons/8/8f/Rakuten_Global_Brand_Logo.svg" },
+    { name: "楽天", url: `https://search.rakuten.co.jp/search/mall/${encodedQuery}/`, img: "https://upload.wikimedia.org/wikipedia/commons/1/19/Rakuten_R_logo.svg" },
     { name: "ヤフオク", url: `https://auctions.yahoo.co.jp/search/search?p=${encodedQuery}`, img: "https://auctions.yahoo.co.jp/favicon.ico" },
-    { name: "メルカリ", url: `https://jp.mercari.com/search?keyword=${encodedQuery}`, img: "https://static.mercdn.net/images/logo/mercari_logo.png" },
-    { name: "ジモティー", url: `https://jmty.jp/all/sale?keyword=${encodedQuery}`, img: "https://jmty.jp/favicon.ico" },
+    { name: "メルカリ", url: `https://jp.mercari.com/search?keyword=${encodedQuery}`, img: "https://banner2.cleanpng.com/20180531/xll/avpvjq0x1.webp" },
+    { name: "ジモティー", url: `https://jmty.jp/all/sale?keyword=${encodedQuery}`, img: "https://image.vorkers.com/resize/643x909/recruiting/68799/pr/21996.png" },
     { name: "Amazon", url: `https://www.amazon.co.jp/s?k=${encodedQuery}`, img: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" }
   ];
   const manualSites = [
