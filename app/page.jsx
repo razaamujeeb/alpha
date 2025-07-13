@@ -72,7 +72,7 @@ export default function Page() {
           </div>
 
           <div style={{ marginTop: "5rem", textAlign: "center" }}>
-            <p style={{ fontWeight: "bold", fontSize: "1rem", marginBottom: "1rem" }}>以下手動</p>
+            <p style={{ fontWeight: "bold", fontSize: "1rem", marginBottom: "1rem" }}>手動</p>
             <div style={{ display: "flex", justifyContent: "center", gap: "2rem" }}>
               {manualSites.map((site, index) => (
                 <div key={index} style={{ textAlign: "center", width: "100px" }}>
